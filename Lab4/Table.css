@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+   margin-top: 200px;
+ margin-right: auto;
+ margin-left: auto;
+ background-color: white;
+
+}
+
+table, th, td {
+    border: 1px solid #848484;
+    padding: 30px;
+
+}
+body{
+	background-color: #d6d6c2;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+   #all{
+    margin-top: 20%;
+       width: 100%;
+
+
+   }}
