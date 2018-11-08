@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<script>
+		let array=[];
+		function suma(array){
+			let rez=0;
+				for(let i=0 ; i< array.length;i++){
+					if(!isNaN(array[i])){
+						rez +=array[i];
+					}
+					
+				}
+				return rez;
+		}
+		
+		console.log(suma([1,2,3,4]));
+		console.log(suma([1,2,'a',3]));
+		console.log(suma('asd'));
+	</script>
+
+</body>
+</html>

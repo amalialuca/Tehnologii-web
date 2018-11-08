@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<script>
+		let object = new Object();
+		let prop;
+		function checkProp(object, prop){
+			if (object.hasOwnProperty(prop)) return true;
+			else return false;
+
+		}
+		console.log(checkProp({red: "red", green: "green", white: "white"}, "green"));
+		console.log(checkProp({red: "red", green: "green", white: "white"}, "black"));
+	</script>
+	
+
+</body>
+</html>

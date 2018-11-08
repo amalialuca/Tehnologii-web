@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+<script>
+	let str;
+	let number;
+	function reverse_string(str){
+  		let reversed = "";    
+  		for (let i = str.length - 1; i >= 0; i--){        
+    		reversed += str[i];
+  		}    
+  		return reversed;
+	}
+	console.log(reverse_string("helloooo"));
+
+	function reverse_number(number) {
+ 		let reversed = 0;
+
+ 		while (number != 0) {
+  			reversed *= 10;
+  			reversed += number % 10;
+  			number -= number % 10;
+  			number /= 10;
+ 		}
+
+ 		return reversed;
+	}
+console.log(reverse_number(123456789));
+
+
+</script>
+
+</body>
+</html>
