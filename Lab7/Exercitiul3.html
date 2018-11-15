@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+<script>
+	
+	try {
+		var result=(function (){
+		 throw new Error('example')
+	}())
+		setTimeout(result, 1000);
+	} catch (err) {
+		console.log("err");
+	}
+
+	 
+
+</script>
+</body>
+</html>

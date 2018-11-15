@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+<script>
+	
+function Animal (type){
+	this.type=type;
+	 var color;
+	this.getColor= function gColor(){
+		return this.color;
+	}
+
+  }
+  function Fish (fishType){
+	var fishType;
+	this.getFishType= function gFishType(){
+		return this.fishType;
+	}
+
+  }
+  function Dog (){
+	var dogType;
+	
+	this.getDogType= function gDogType(){
+		return this.dogType;
+	}
+
+  }
+  function DogType (typeName){
+	this.typeName=typeName;
+	var furColor;
+	
+	this.getFurColor= function gFurColor(){
+		return this.dogType;
+	}
+
+  }
+ Dog.prototype=Object.create(Animal.prototype);
+ var dog= new Dog();
+ dog.getColor="brown"
+ dog.type="dog";
+ dog.getDogType="Teacup dog";
+ console.log("Animal: "+dog.type ," type:" +dog.getDogType, " color:"+dog.getColor);
+
+	 
+
+</script>
+</body>
+</html>
